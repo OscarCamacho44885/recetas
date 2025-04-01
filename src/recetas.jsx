@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importamos Bootstrap
 import "./style.css"; // Importamos estilos personalizados
-import sopa from '../src/image/sopa1.jpg';
 
 
 const Recetas = () => {
@@ -72,7 +71,7 @@ const Recetas = () => {
     
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/sopa2.png" className="card-img-top" alt="Sopa de Tomate" />
+        <img src="/image/sopa2.png" className="card-img-top" alt="Sopa de Tomate" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Tomate</h5>
           <hr />
@@ -114,7 +113,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/sopa3.png" className="card-img-top" alt="Sopa de Lentejas" />
+        <img src="/image/sopa3.png" className="card-img-top" alt="Sopa de Lentejas" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Lentejas</h5>
           <hr />
@@ -154,7 +153,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/sopa4.jpg" className="card-img-top" alt="Sopa de Crema de Espinacas" />
+        <img src="/image/sopa4.jpg" className="card-img-top" alt="Sopa de Crema de Espinacas" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Crema de Espinacas</h5>
           <hr />
@@ -196,7 +195,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/sopa5.jpg" className="card-img-top" alt="Sopa de Tortilla" />
+        <img src="/image/sopa5.jpg" className="card-img-top" alt="Sopa de Tortilla" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Tortilla</h5>
           <hr />
@@ -239,7 +238,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/sopa6.jpg" className="card-img-top" alt="Sopa de Verduras" />
+        <img src="/image/sopa6.jpg" className="card-img-top" alt="Sopa de Verduras" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Verduras</h5>
           <hr />
@@ -291,7 +290,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno1.png" className="card-img-top" alt="Tortilla de Papas" />
+        <img src="/image/desayuno1.png" className="card-img-top" alt="Tortilla de Papas" />
         <div className="card-body">
           <h5 className="card-title">Tortilla de Papas</h5>
           <hr />
@@ -326,7 +325,7 @@ const Recetas = () => {
     
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno2.png" className="card-img-top" alt="Avena con Frutas" />
+        <img src="/image/desayuno2.png" className="card-img-top" alt="Avena con Frutas" />
         <div className="card-body">
           <h5 className="card-title">Avena con Fruntas</h5>
           <hr />
@@ -363,7 +362,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno3.png" className="card-img-top" alt="Huevos Revueltos con Verduras" />
+        <img src="/image/desayuno3.png" className="card-img-top" alt="Huevos Revueltos con Verduras" />
         <div className="card-body">
           <h5 className="card-title">Huevos Revueltos con Verduras</h5>
           <hr />
@@ -400,7 +399,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno4.png" className="card-img-top" alt="Panqueques con Miel y Frutas" />
+        <img src="/image/desayuno4.png" className="card-img-top" alt="Panqueques con Miel y Frutas" />
         <div className="card-body">
           <h5 className="card-title">Panqueques con Miel y Frutas</h5><hr />
           <p className="card-text">
@@ -438,7 +437,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno5.png" className="card-img-top" alt="Batido de Frutas y Yogur" />
+        <img src="/image/desayuno5.png" className="card-img-top" alt="Batido de Frutas y Yogur" />
         <div className="card-body">
           <h5 className="card-title">Batido de Frutas y Yogur</h5><hr />
           <p className="card-text">
@@ -471,7 +470,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/desayuno6.png" className="card-img-top" alt="Tostadas Francesas Saludables" />
+        <img src="/image/desayuno6.png" className="card-img-top" alt="Tostadas Francesas Saludables" />
         <div className="card-body">
           <h5 className="card-title">Tostadas Francesas Saludables</h5><hr />
           <p className="card-text">
@@ -517,7 +516,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/pasta1.png" className="card-img-top" alt="Pasta con Atún" />
+        <img src="/image/pasta1.png" className="card-img-top" alt="Pasta con Atún" />
         <div className="card-body">
           <h5 className="card-title">Pasta con Atún</h5><hr />
           <p className="card-text">
@@ -556,7 +555,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/pasta2.jpg" className="card-img-top" alt="Pasta Salteada" />
+        <img src="/image/pasta2.jpg" className="card-img-top" alt="Pasta Salteada" />
         <div className="card-body">
           <h5 className="card-title">Pasta Salteada</h5><hr />
           <p className="card-text">
@@ -606,7 +605,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/pasta3.jpg" className="card-img-top" alt="Fettuccini con Salsa Alfredo" />
+        <img src="/image/pasta3.jpg" className="card-img-top" alt="Fettuccini con Salsa Alfredo" />
         <div className="card-body">
           <h5 className="card-title">Fettuccini con Salsa Alfredo</h5><hr />
           <p className="card-text">
@@ -653,7 +652,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/comida1.jpg" className="card-img-top" alt="Tacos de Bistec" />
+        <img src="/image/comida1.jpg" className="card-img-top" alt="Tacos de Bistec" />
         <div className="card-body">
           <h5 className="card-title">Tacos de Bistec</h5><hr />
           <p className="card-text">
@@ -691,7 +690,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/comida2.jpg" className="card-img-top" alt="Arroz con Verduras y Pollo" />
+        <img src="/image/comida2.jpg" className="card-img-top" alt="Arroz con Verduras y Pollo" />
         <div className="card-body">
           <h5 className="card-title">Arroz con Verduras y Pollo</h5><hr />
           <p className="card-text">
@@ -736,7 +735,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/comida3.jpg" className="card-img-top" alt="Pollo al Curry" />
+        <img src="/image/comida3.jpg" className="card-img-top" alt="Pollo al Curry" />
         <div className="card-body">
           <h5 className="card-title">Pollo al Curry</h5><hr />
           <p className="card-text">
@@ -777,7 +776,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/cena1.jpg" className="card-img-top" alt="Pizza de Sarten" />
+        <img src="/image/cena1.jpg" className="card-img-top" alt="Pizza de Sarten" />
         <div className="card-body">
           <h5 className="card-title">Pizza de Sarten</h5><hr />
           <p className="card-text">
@@ -822,7 +821,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/cena2.jpg" className="card-img-top" alt="Hamburguesas" />
+        <img src="/image/cena2.jpg" className="card-img-top" alt="Hamburguesas" />
         <div className="card-body">
           <h5 className="card-title">Hamburguesas</h5><hr />
           <p className="card-text">
@@ -861,7 +860,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/cena3.png" className="card-img-top" alt="Banderillas" />
+        <img src="/image/cena3.png" className="card-img-top" alt="Banderillas" />
         <div className="card-body">
           <h5 className="card-title">Banderillas</h5><hr />
           <p className="card-text">
@@ -903,7 +902,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/snack1.png" className="card-img-top" alt="Palitos de Queso" />
+        <img src="/image/snack1.png" className="card-img-top" alt="Palitos de Queso" />
         <div className="card-body">
           <h5 className="card-title">Palitos de Queso</h5><hr />
           <p className="card-text">
@@ -936,7 +935,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/snack2.jpg" className="card-img-top" alt="Galletas de Avena" />
+        <img src="/image/snack2.jpg" className="card-img-top" alt="Galletas de Avena" />
         <div className="card-body">
           <h5 className="card-title">Galletas de Avena</h5><hr />
           <p className="card-text">
@@ -970,7 +969,7 @@ const Recetas = () => {
 
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="../src/image/snack3.jpg" className="card-img-top" alt="Frutas con Yogur" />
+        <img src="/image/snack3.jpg" className="card-img-top" alt="Frutas con Yogur" />
         <div className="card-body">
           <h5 className="card-title">Frutas con Yogur</h5><hr />
           <p className="card-text">

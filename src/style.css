@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Hacer que el body ocupe toda la pantalla */
+body {
+    background-color:yellowgreen;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Hacer que el contenedor principal llene el espacio restante */
+  #root, .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo 100% de la altura de la pantalla */
+  }
+  
+  /* Hacer que el contenido principal ocupe todo el espacio disponible */
+  main {
+    flex-grow: 1; /* Empuja el footer hacia abajo */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el header */
+  header {
+  width: 100%;
+  background: solid #5ed42e;
+  padding: 20px 0;
+  text-align: right;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  z-index: 1000;
+  margin-top: auto;
+  animation: ColorAnimation 50s infinite alternate; /* Aplica la animación */
+  }
+
+  nav {
+    padding: 0 105px;
+    display: flex;
+    justify-content: center;
+    gap: 90px; /* Espacio entre cada enlace */
+  }
+  
+  /* Estilos de los enlaces */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  
+  nav a:hover {
+    animation: textColorAnimation 0.9s infinite alternate;
+  }
+  /* Ajustar margen superior del main para que no quede oculto bajo el header */
+  main {
+    margin-top: 70px; /* Ajustar según la altura del header */
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+  }
+  
+  .card-img-top {
+    width: 100%;  /* Ajusta el ancho */
+    height: auto; /* Mantiene proporción */
+    max-height: 300px; /* Altura máxima */
+    object-fit: cover; /* Recorta si es necesario */
+  }
+
+  .card-hover-content {
+    display: none; /* Oculto por defecto */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card-hover:hover .card-hover-content {
+    display: block; /* Se muestra cuando pasas el mouse */
+    opacity: 1;
+  }
+  
+  .card-hover:hover .card-body {
+    display: none; /* Oculta la descripción cuando aparece el contenido extra */
+  }
+  
+  .card-img-top {
+    width: 100%;       /* Ajusta la imagen al ancho del contenedor */
+    height: 200px;     /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta y ajusta la imagen sin deformarla */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+  }
+  
+  .card-hover {
+    background-color: #CEAF80;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: 8px solid transparent; /* Para evitar cambios bruscos */
+  }
+  .card-footer{
+    background-color: #665436;
+    text-align: center;
+    text-decoration:black;
+    font-weight: bold;
+  }
+  
+  .card-hover:hover {
+    background-color: #9b8158;
+    border-image-source: linear-gradient(45deg, red, yellow, green, cyan, blue, purple, red);
+    border-image-slice: 1;
+    animation: borderAnimation 0.4s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% { border-image-source: linear-gradient(45deg, red, yellow, green, cyan, blue, purple, red); }
+    50% { border-image-source: linear-gradient(45deg, blue, purple, red, yellow, green, cyan); }
+    100% { border-image-source: linear-gradient(45deg, red, yellow, green, cyan, blue, purple, red); }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta esto según la altura de tu header */
+    box-sizing: border-box;
+  }
+  
+  .categoria-1 {
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura */
+    background-image: url('../src/image/sopa0.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Color de texto visible */
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    margin-top: 0px; /* Espacio para que el header no lo tape */
+  
+    border: 10px solid blue; /* Borde inicial */
+    animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+    border-radius: 15px; /* Bordes redondeados opcionales */
+  }
+  
+  .banner {
+    width: 1500px;
+    height: 200px; /* Ajusta según lo necesites */
+    background-image: url('../src/image/banner.png'); /* Asegúrate de la ruta */
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Agrega un sombreado al texto */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 50px;
+  }
+  
+  @keyframes bordeAnimado {
+    0% { border-color: red; }
+    50% { border-color: yellow; }
+    75% { border-color: brown; }
+    100% { border-color: black; }
+  }
+
+  .categoria-2 {
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura */
+    background-image: url('../src/image/desayuno0.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Color de texto visible */
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    margin-top: 10px; /* Espacio para que el header no lo tape */
+  
+    border: 10px solid blue; /* Borde inicial */
+    animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+    border-radius: 15px; /* Bordes redondeados opcionales */
+  }
+  
+  
+  @keyframes borderAnimation1 {
+    0% {
+      border-color: blue;
+      box-shadow: 0 0 5px black;
+    }
+    50% {
+      border-color: orange;
+      box-shadow: 0 0 10px red;
+    }
+    100% {
+      border-color: green;
+      box-shadow: 0 0 15px blue;
+    }
+  }
+  
+  .logo {
+    background-image: url('../src/image/logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 145px; /* Ajusta el tamaño del logo */
+    height: 192px;
+    
+    border: 10px solid black;
+    animation: borderAnimation1 2s infinite alternate;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .categoria-3 {
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura */
+    background-image: url('../src/image/pasta0.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    margin-top: 10px; /* Espacio para que el header no lo tape */
+  
+    border: 10px solid blue; /* Borde inicial */
+    animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+    border-radius: 15px; /* Bordes redondeados opcionales */
+  }
+
+    @keyframes ColorAnimation {
+      0% { background-color: pink; }
+      25% { background-color: red; }
+      50% { background-color: green; }
+      75% { background-color: black; }
+      100% { background-color: blue; }
+    }
+    @keyframes textColorAnimation {
+      0% { color: yellow; }
+      25% { color: white; }
+      50% { color: cyan; }
+      75% { color: orange; }
+      100% { color: coral; }
+    }
+
+    button{
+      background-Color: #37ff00; 
+      color: white; 
+      border: none; 
+      padding: 8px 16px; 
+      border-Radius: 4px; 
+      cursor: pointer;
+    }
+    @keyframes colorcontainer {
+      0% { background-color: rgb(12, 88, 10); }
+      50% { background-color: yellow; }
+      100% { background-color:red; }
+    }
+    
+    .container{
+      animation: colorcontainer 15s infinite alternate;
+      
+    }
+    .categoria-4 {
+      width: 100%;
+      height: 300px; /* Puedes ajustar la altura */
+      background-image: url('../src/image/comida0.jpg'); /* Ruta de la imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que se repita */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+      margin-top: 10px; /* Espacio para que el header no lo tape */
+    
+      border: 10px solid blue; /* Borde inicial */
+      animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+      border-radius: 15px; /* Bordes redondeados opcionales */
+    }
+    .categoria-5 {
+      width: 100%;
+      height: 300px; /* Puedes ajustar la altura */
+      background-image: url('../src/image/cena0.jpg'); /* Ruta de la imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que se repita */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+      margin-top: 10px; /* Espacio para que el header no lo tape */
+    
+      border: 10px solid blue; /* Borde inicial */
+      animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+      border-radius: 15px; /* Bordes redondeados opcionales */
+    }
+    .categoria-6 {
+      width: 100%;
+      height: 300px; /* Puedes ajustar la altura */
+      background-image: url('../src/image/snack0.jpg'); /* Ruta de la imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que se repita */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+      margin-top: 10px; /* Espacio para que el header no lo tape */
+    
+      border: 10px solid blue; /* Borde inicial */
+      animation: bordeAnimado 5s infinite alternate; /* Aplica la animación */
+      border-radius: 15px; /* Bordes redondeados opcionales */
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      max-width: 1200px; /* Ajusta según tu diseño */
+      margin: 0 30px;
+    }
+    
+    .logo-1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin: 0;
+      animation: textColorAnimation 1s infinite alternate;
+    }

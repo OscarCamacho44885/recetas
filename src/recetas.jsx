@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importamos Bootstrap
 import "./style.css"; // Importamos estilos personalizados
+import sopa from '../src/image/sopa1.jpg';
 
 
 const Recetas = () => {
@@ -33,7 +34,7 @@ const Recetas = () => {
   <div className="row row-cols-1 row-cols-md-3 g-4">
     <div className="col">
       <div className="card h-100 card-hover">
-        <img src="src/image/sopa1.jpg" className="card-img-top" alt="Sopa de Champiñones" />
+        <img src={sopa} className="card-img-top" alt="Sopa de Champiñones" />
         <div className="card-body">
           <h5 className="card-title">Sopa de Champiñones</h5>
           <hr />
